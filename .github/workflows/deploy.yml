@@ -18,8 +18,8 @@ jobs:
       - name: Checkout your repository using git
         uses: actions/checkout@v4
         with:
-          submodules: true  # 支持 Git Submodule 模式
-          token: ${{ secrets.GITHUB_TOKEN }}  # 自动访问同账号下的私有仓库
+          fetch-depth: 0  # 获取完整历史以便正确处理版本
+          submodules: false  # 禁用子模块，项目不需要
       
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -36,6 +36,17 @@ jobs:
       
       - name: Build site
         run: pnpm run build
+        env:
+          NODE_ENV: production
+      
+      - name: Debug build output
+        run: |
+          echo "=== Build output structure ==="
+          ls -la dist/
+          echo "=== Checking for assets ==="
+          ls -la dist/_astro/ 2>/dev/null || echo "No _astro folder"
+          echo "=== Checking HTML head ==="
+          head -50 dist/index.html | grep -E '(href|src)=' || echo "No index.html or no links found"
       
       - name: Deploy to pages branch
         uses: JamesIves/github-pages-deploy-action@v4
@@ -43,3 +54,4 @@ jobs:
           branch: pages # 部署到pages分支
           folder: dist # Astro默认构建输出目录
           clean: true # 清理目标分支中的旧文件
+          single-commit: true # 单提交模式，减少分支历史
