@@ -39,14 +39,13 @@ jobs:
         env:
           NODE_ENV: production
       
-      - name: Debug build output
+      - name: Create .nojekyll file
         run: |
-          echo "=== Build output structure ==="
+          # 创建 .nojekyll 文件防止 GitHub Pages 用 Jekyll 处理
+          # Jekyll 会忽略 _ 开头的文件（如 _astro），导致 CSS/JS 404
+          touch dist/.nojekyll
+          echo "Created .nojekyll to disable Jekyll processing"
           ls -la dist/
-          echo "=== Checking for assets ==="
-          ls -la dist/_astro/ 2>/dev/null || echo "No _astro folder"
-          echo "=== Checking HTML head ==="
-          head -50 dist/index.html | grep -E '(href|src)=' || echo "No index.html or no links found"
       
       - name: Deploy to pages branch
         uses: JamesIves/github-pages-deploy-action@v4
