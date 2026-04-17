@@ -347,11 +347,20 @@ export interface AnnouncementConfig {
 	};
 }
 
+// 本地音乐条目配置
+export interface LocalSong {
+	name: string; // 歌曲名称
+	artist: string; // 艺术家
+	url: string; // 歌曲URL
+	cover?: string; // 封面图片URL
+}
+
 export interface MusicPlayerConfig {
 	enable: boolean; // 是否启用音乐播放器功能
 	showFloatingPlayer: boolean; // 是否显示悬浮播放器 UI
 	floatingEntryMode?: "default" | "fab"; // 悬浮入口模式：默认独立播放器或集成到 FAB 组
 	mode: "meting" | "local"; // 音乐播放器模式
+	localSongs?: LocalSong[]; // 本地音乐列表，当 mode 为 "local" 时使用
 	meting_api: string; // Meting API 地址
 	id: string; // 歌单ID
 	server: string; // 音乐源服务器
