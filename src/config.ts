@@ -126,24 +126,24 @@ export const siteConfig: SiteConfig = {
 		// 支持单张图片或图片数组，当数组长度 > 1 时自动启用轮播
 		src: {
 			desktop: [
-				"/assets/desktop-banner/1.webp",
-				"/assets/desktop-banner/2.webp",
-				"/assets/desktop-banner/3.webp",
-				"/assets/desktop-banner/4.webp",
-			], // 桌面横幅图片
+				"/assets/kanata/0df431adcbef76094b3645095c8ab4cc7cd98d103057.jpg",
+				"/assets/kanata/20260416162216_121_62.png",
+				"/assets/kanata/27302e97b033dce31ac4053f211b2b26fb235a0d.jpg",
+				"/assets/kanata/a5c27d1ed21b0ef41bd5e4cbaf9346da81cb39db9055(1).jpg",
+			], // 桌面横幅图片 - 彼方照片轮播
 			mobile: [
-				"/assets/mobile-banner/1.webp",
-				"/assets/mobile-banner/2.webp",
-				"/assets/mobile-banner/3.webp",
-				"/assets/mobile-banner/4.webp",
-			], // 移动横幅图片
-		}, // 使用本地横幅图片
+				"/assets/kanata/0df431adcbef76094b3645095c8ab4cc7cd98d103057.jpg",
+				"/assets/kanata/20260416162216_121_62.png",
+				"/assets/kanata/27302e97b033dce31ac4053f211b2b26fb235a0d.jpg",
+				"/assets/kanata/a5c27d1ed21b0ef41bd5e4cbaf9346da81cb39db9055(1).jpg",
+			], // 移动端横幅图片 - 彼方照片轮播
+		}, // 使用本地彼方照片
 
 		position: "center", // 等同于 object-position，仅支持 'top', 'center', 'bottom'。默认为 'center'
 
 		carousel: {
 			enable: true, // 为 true 时：为多张图片启用轮播。为 false 时：从数组中随机显示一张图片
-			interval: 3, // 轮播间隔时间（秒）
+			interval: 5, // 轮播间隔时间（秒）
 		},
 
 		waves: {
@@ -246,18 +246,18 @@ export const siteConfig: SiteConfig = {
 export const fullscreenWallpaperConfig: FullscreenWallpaperConfig = {
 	src: {
 		desktop: [
-			"/assets/desktop-banner/1.webp",
-			"/assets/desktop-banner/2.webp",
-			"/assets/desktop-banner/3.webp",
-			"/assets/desktop-banner/4.webp",
-		], // 桌面横幅图片
+			"/assets/kanata/0df431adcbef76094b3645095c8ab4cc7cd98d103057.jpg",
+			"/assets/kanata/20260416162216_121_62.png",
+			"/assets/kanata/27302e97b033dce31ac4053f211b2b26fb235a0d.jpg",
+			"/assets/kanata/a5c27d1ed21b0ef41bd5e4cbaf9346da81cb39db9055(1).jpg",
+		], // 桌面全屏壁纸 - 彼方照片轮播
 		mobile: [
-			"/assets/mobile-banner/1.webp",
-			"/assets/mobile-banner/2.webp",
-			"/assets/mobile-banner/3.webp",
-			"/assets/mobile-banner/4.webp",
-		], // 移动横幅图片
-	}, // 使用本地横幅图片
+			"/assets/kanata/0df431adcbef76094b3645095c8ab4cc7cd98d103057.jpg",
+			"/assets/kanata/20260416162216_121_62.png",
+			"/assets/kanata/27302e97b033dce31ac4053f211b2b26fb235a0d.jpg",
+			"/assets/kanata/a5c27d1ed21b0ef41bd5e4cbaf9346da81cb39db9055(1).jpg",
+		], // 移动端全屏壁纸 - 彼方照片轮播
+	}, // 使用本地彼方照片
 	position: "center", // 壁纸位置，等同于 object-position
 	carousel: {
 		enable: true, // 启用轮播
@@ -357,7 +357,7 @@ export const navBarConfig: NavBarConfig = {
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "assets/images/avatar.webp", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
+	avatar: "assets/kanata/0df431adcbef76094b3645095c8ab4cc7cd98d103057.jpg", // 彼方照片作为头像
 	name: "日向彼方",
 	bio: "藤壶学园二年级生，侦探部部长～最喜欢主人了！",
 	typewriter: {
@@ -454,16 +454,34 @@ export const announcementConfig: AnnouncementConfig = {
 	},
 };
 
+// 本地音乐配置 - 日向彼方主题音乐
+const kanataMusicList = [
+	{
+		name: "日向かなたの探偵部",
+		artist: "紙の上の魔法使い",
+		url: "https://music.163.com/song/media/outer/url?id=2619624255.mp3",
+		cover: "assets/kanata/0df431adcbef76094b3645095c8ab4cc7cd98d103057.jpg",
+	},
+	{
+		name: "届かない恋",
+		artist: "上原れな",
+		url: "https://music.163.com/song/media/outer/url?id=22765923.mp3",
+		cover: "assets/kanata/20260416162216_121_62.png",
+	},
+];
+
 export const musicPlayerConfig: MusicPlayerConfig = {
 	enable: true, // 启用音乐播放器功能
 	showFloatingPlayer: true, // 显示悬浮播放器 UI
 	floatingEntryMode: "fab", // 悬浮入口模式："default" 为独立悬浮播放器，"fab" 为集成到通用 FAB 组
 	mode: "local", // 音乐播放器模式，可选 "local" 或 "meting"
-	meting_api:
-		"https://meting.mysqil.com/api?server=:server&type=:type&id=:id&auth=:auth&r=:r", // Meting API 地址
-	id: "14164869977", // 歌单ID
-	server: "netease", // 音乐源服务器。有的meting的api源支持更多平台,一般来说,netease=网易云音乐, tencent=QQ音乐, kugou=酷狗音乐, xiami=虾米音乐, baidu=百度音乐
-	type: "playlist", // 播单类型
+	// 使用本地音乐列表，配置本地音乐
+	localSongs: kanataMusicList,
+	// Meting 配置（当 mode 为 "meting" 时使用）
+	meting_api: "https://meting.mysqil.com/api?server=:server&type=:type&id=:id&auth=:auth&r=:r",
+	id: "14164869977",
+	server: "netease",
+	type: "playlist",
 };
 
 export const footerConfig: FooterConfig = {
