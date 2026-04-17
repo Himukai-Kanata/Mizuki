@@ -24,7 +24,7 @@ const SITE_TIMEZONE = 8;
 export const siteConfig: SiteConfig = {
 	title: "彼方の部屋",
 	subtitle: "名侦探彼方的个人博客",
-	siteURL: "https://himukai-kanata.github.io/Mizuki/",
+	siteURL: "https://kanata-blog.pages.dev/",
 	siteStartDate: "2025-01-01",
 
 	timeZone: SITE_TIMEZONE,
@@ -50,8 +50,8 @@ export const siteConfig: SiteConfig = {
 	navbarTitle: {
 		mode: "text-icon",
 		text: "彼方の部屋",
-		icon: "/Mizuki/assets/home/home.webp",
-		logo: "/Mizuki/assets/home/default-logo.webp",
+		icon: "/assets/home/home.webp",
+		logo: "/assets/home/default-logo.webp",
 	},
 
 	pageScaling: {
@@ -96,14 +96,14 @@ export const siteConfig: SiteConfig = {
 	banner: {
 		src: {
 			desktop: [
-				"/Mizuki/assets/kanata/kanata-1.jpg",
-				"/Mizuki/assets/kanata/kanata-2.png",
-				"/Mizuki/assets/kanata/kanata-3.png",
+				"/assets/kanata/kanata-1.jpg",
+				"/assets/kanata/kanata-2.png",
+				"/assets/kanata/kanata-3.png",
 			],
 			mobile: [
-				"/Mizuki/assets/kanata/kanata-1.jpg",
-				"/Mizuki/assets/kanata/kanata-2.png",
-				"/Mizuki/assets/kanata/kanata-3.png",
+				"/assets/kanata/kanata-1.jpg",
+				"/assets/kanata/kanata-2.png",
+				"/assets/kanata/kanata-3.png",
 			],
 		},
 
@@ -195,14 +195,14 @@ export const siteConfig: SiteConfig = {
 export const fullscreenWallpaperConfig: FullscreenWallpaperConfig = {
 	src: {
 		desktop: [
-			"/Mizuki/assets/kanata/kanata-1.jpg",
-			"/Mizuki/assets/kanata/kanata-2.png",
-			"/Mizuki/assets/kanata/kanata-3.png",
+			"/assets/kanata/kanata-1.jpg",
+			"/assets/kanata/kanata-2.png",
+			"/assets/kanata/kanata-3.png",
 		],
 		mobile: [
-			"/Mizuki/assets/kanata/kanata-1.jpg",
-			"/Mizuki/assets/kanata/kanata-2.png",
-			"/Mizuki/assets/kanata/kanata-3.png",
+			"/assets/kanata/kanata-1.jpg",
+			"/assets/kanata/kanata-2.png",
+			"/assets/kanata/kanata-3.png",
 		],
 	},
 	position: "center",
@@ -303,7 +303,7 @@ export const navBarConfig: NavBarConfig = {
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "/Mizuki/assets/kanata/kanata-1.jpg",
+	avatar: "/assets/kanata/kanata-1.jpg",
 	name: "日向彼方",
 	bio: "藤壶学园二年级生，侦探部部长～最喜欢主人了！",
 	typewriter: {
@@ -378,14 +378,14 @@ const kanataMusicList = [
 	{
 		name: "日向かなたの探偵部",
 		artist: "紙の上の魔法使い",
-		url: "/Mizuki/assets/music/url/xryx.mp3",
-		cover: "/Mizuki/assets/music/cover/xryx.webp",
+		url: "/assets/music/url/xryx.mp3",
+		cover: "/assets/music/cover/xryx.webp",
 	},
 	{
 		name: "届かない恋",
 		artist: "上原れな",
-		url: "/Mizuki/assets/music/url/cl.mp3",
-		cover: "/Mizuki/assets/music/cover/cl.webp",
+		url: "/assets/music/url/cl.mp3",
+		cover: "/assets/music/cover/cl.webp",
 	},
 ];
 
