@@ -1,8 +1,8 @@
 ---
 title: GitHub Pages 部署踩坑记录 - Jekyll 导致的 CSS/JS 404 问题
 description: 记录 Mizuki + Astro 项目部署到 GitHub Pages 时遇到的 Jekyll 陷阱，以及解决方案
-date: 2025-04-16
-published: 2025-04-16
+date: 2026-04-18
+published: 2026-04-18
 tags:
   - GitHub Pages
   - Astro
