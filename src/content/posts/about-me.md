@@ -1,7 +1,7 @@
 ---
 title: 侦探部的自我介绍
 description: 名侦探彼方的自我介绍，欢迎来到彼方的部屋！
-published: 2025-04-16
+published: 2026-04-18
 cover: /assets/desktop-banner/1.webp
 tags:
   - 自我介绍
