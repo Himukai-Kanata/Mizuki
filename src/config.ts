@@ -50,8 +50,8 @@ export const siteConfig: SiteConfig = {
 	navbarTitle: {
 		mode: "text-icon",
 		text: "彼方の部屋",
-		icon: "assets/home/home.webp",
-		logo: "assets/home/default-logo.webp",
+		icon: "/Mizuki/assets/home/home.webp",
+		logo: "/Mizuki/assets/home/default-logo.webp",
 	},
 
 	pageScaling: {
@@ -96,14 +96,14 @@ export const siteConfig: SiteConfig = {
 	banner: {
 		src: {
 			desktop: [
-				"assets/kanata/kanata-1.jpg",
-				"assets/kanata/kanata-2.png",
-				"assets/kanata/kanata-3.png",
+				"/Mizuki/assets/kanata/kanata-1.jpg",
+				"/Mizuki/assets/kanata/kanata-2.png",
+				"/Mizuki/assets/kanata/kanata-3.png",
 			],
 			mobile: [
-				"assets/kanata/kanata-1.jpg",
-				"assets/kanata/kanata-2.png",
-				"assets/kanata/kanata-3.png",
+				"/Mizuki/assets/kanata/kanata-1.jpg",
+				"/Mizuki/assets/kanata/kanata-2.png",
+				"/Mizuki/assets/kanata/kanata-3.png",
 			],
 		},
 
@@ -195,14 +195,14 @@ export const siteConfig: SiteConfig = {
 export const fullscreenWallpaperConfig: FullscreenWallpaperConfig = {
 	src: {
 		desktop: [
-			"assets/kanata/kanata-1.jpg",
-			"assets/kanata/kanata-2.png",
-			"assets/kanata/kanata-3.png",
+			"/Mizuki/assets/kanata/kanata-1.jpg",
+			"/Mizuki/assets/kanata/kanata-2.png",
+			"/Mizuki/assets/kanata/kanata-3.png",
 		],
 		mobile: [
-			"assets/kanata/kanata-1.jpg",
-			"assets/kanata/kanata-2.png",
-			"assets/kanata/kanata-3.png",
+			"/Mizuki/assets/kanata/kanata-1.jpg",
+			"/Mizuki/assets/kanata/kanata-2.png",
+			"/Mizuki/assets/kanata/kanata-3.png",
 		],
 	},
 	position: "center",
@@ -303,7 +303,7 @@ export const navBarConfig: NavBarConfig = {
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "assets/kanata/kanata-1.jpg",
+	avatar: "/Mizuki/assets/kanata/kanata-1.jpg",
 	name: "日向彼方",
 	bio: "藤壶学园二年级生，侦探部部长～最喜欢主人了！",
 	typewriter: {
@@ -378,14 +378,14 @@ const kanataMusicList = [
 	{
 		name: "日向かなたの探偵部",
 		artist: "紙の上の魔法使い",
-		url: "assets/music/url/xryx.mp3",
-		cover: "assets/music/cover/xryx.webp",
+		url: "/Mizuki/assets/music/url/xryx.mp3",
+		cover: "/Mizuki/assets/music/cover/xryx.webp",
 	},
 	{
 		name: "届かない恋",
 		artist: "上原れな",
-		url: "assets/music/url/cl.mp3",
-		cover: "assets/music/cover/cl.webp",
+		url: "/Mizuki/assets/music/url/cl.mp3",
+		cover: "/Mizuki/assets/music/cover/cl.webp",
 	},
 ];
 
@@ -533,11 +533,11 @@ export const pioConfig: import("./types/config").PioConfig = {
 			"Stop touching me!",
 			"HENTAI!",
 			"Don't bully me like that!",
-		],
-		home: "Click here to go back to homepage!",
-		skin: ["Want to see my new outfit?", "The new outfit looks great~"],
-		close: "QWQ See you next time~",
-		link: "https://github.com/Himukai-Kanata",
+		], // 触摸提示
+		home: "Click here to go back to homepage!", // 首页提示
+		skin: ["Want to see my new outfit?", "The new outfit looks great~"], // 换装提示
+		close: "QWQ See you next time~", // 关闭提示
+		link: "https://github.com/Himukai-Kanata", // 关于链接
 	},
 };
 
