@@ -380,7 +380,7 @@ export const musicPlayerConfig: MusicPlayerConfig = {
 	floatingEntryMode: "fab",
 	mode: "meting",
 	meting_api: "https://meting.mysqil.com/api?server=:server&type=:type&id=:id&auth=:auth&r=:r",
-	id: "14164869977",
+	id: "17908621846",
 	server: "netease",
 	type: "playlist",
 };
