@@ -131,10 +131,9 @@ export const siteConfig: SiteConfig = {
 
 			subtitle: [
 				"多方调查是成功的关键哦～",
-				"小女子不才，还请多多关照",
-				"主人～今天有什么想调查的吗？",
-				"因为是主人创造的书嘛，会一直陪着你哦",
-				"笨蛋！人家可是名侦探彼方！",
+				"小女子不才，还请多多关照～",
+				"今天有什么想调查的吗？",
+
 			],
 			typewriter: {
 				enable: true,
@@ -305,7 +304,7 @@ export const navBarConfig: NavBarConfig = {
 export const profileConfig: ProfileConfig = {
 	avatar: "/assets/kanata/kanata-1.jpg",
 	name: "日向彼方",
-	bio: "藤壶学园二年级生，侦探部部长～最喜欢主人了！",
+	bio: "藤壶学园二年级生，侦探部部长～",
 	typewriter: {
 		enable: true,
 		speed: 80,
