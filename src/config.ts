@@ -378,14 +378,14 @@ const kanataMusicList = [
 	{
 		name: "日向かなたの探偵部",
 		artist: "紙の上の魔法使い",
-		url: "/assets/music/url/xryx.mp3",
-		cover: "/assets/music/cover/xryx.webp",
+		url: "/assets/music/url/日向かなたの探偵部 MP3 - Kami no Ue no MahoutsukaiSuisou Ginka no Istoria.mp3",
+		cover: "/assets/music/cover/kanata.webp",
 	},
 	{
 		name: "届かない恋",
 		artist: "上原れな",
-		url: "/assets/music/url/cl.mp3",
-		cover: "/assets/music/cover/cl.webp",
+		url: "/assets/music/url/届かない恋.mp3",
+		cover: "/assets/music/cover/todokanai.webp",
 	},
 ];
 
@@ -533,11 +533,11 @@ export const pioConfig: import("./types/config").PioConfig = {
 			"Stop touching me!",
 			"HENTAI!",
 			"Don't bully me like that!",
-		], // 触摸提示
-		home: "Click here to go back to homepage!", // 首页提示
-		skin: ["Want to see my new outfit?", "The new outfit looks great~"], // 换装提示
-		close: "QWQ See you next time~", // 关闭提示
-		link: "https://github.com/Himukai-Kanata", // 关于链接
+		],
+		home: "Click here to go back to homepage!",
+		skin: ["Want to see my new outfit?", "The new outfit looks great~"],
+		close: "QWQ See you next time~",
+		link: "https://github.com/Himukai-Kanata",
 	},
 };
 
